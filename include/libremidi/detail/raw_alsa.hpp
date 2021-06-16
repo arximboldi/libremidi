@@ -303,7 +303,7 @@ public:
   std::vector<pollfd> fds_;
   midi_stream_decoder decoder_{this->inputData_};
 
-  bool filter_active_sensing_ = false;
+  bool filter_active_sensing_ = true;
 };
 
 class midi_out_raw_alsa final : public midi_out_default<midi_out_raw_alsa>
